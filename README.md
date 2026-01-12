@@ -136,14 +136,4 @@ LangraphAgent_Viridien/
 └── README.md
 ```
 
-## How I Used Claude Code
 
-I used Claude Code (Anthropic's CLI tool) to refactor the existing procedural FastAPI logic into a LangGraph-based agent. Claude Code helped me:
-
-1. **Understand the existing codebase** - Read and analyzed the original `main.py` and mock data files
-2. **Design the LangGraph architecture** - Structured the state, nodes, and control flow according to assignment requirements
-3. **Implement the refactoring** - Converted procedural logic into discrete LangGraph nodes while preserving all business logic
-4. **Write comprehensive tests** - Created unit tests for each node and integration tests for the full workflow
-5. **Set up CI/CD** - Added GitHub Actions workflow for automated testing
-
-The entire refactoring was done iteratively with Claude Code suggesting changes and me reviewing/testing each step.
