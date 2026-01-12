@@ -34,8 +34,8 @@ A minimal LangGraph-based support ticket triage agent that classifies tickets, f
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR_USERNAME/LangraphAgent_Viridien.git
-cd LangraphAgent_Viridien
+git clone https://github.com/ashpola21/LangGraph_Agent.git
+
 
 # Create virtual environment
 python3.10 -m venv venv
@@ -101,7 +101,7 @@ source venv/bin/activate
 pytest tests/ -v
 ```
 
-## LangSmith Tracing (Optional)
+## LangSmith Tracing
 
 To enable tracing, create a `.env` file:
 
@@ -119,7 +119,7 @@ LANGCHAIN_PROJECT=langgraph-triage-agent
 ## Project Structure
 
 ```
-LangraphAgent_Viridien/
+LangGraph_Agent/
 ├── app/
 │   └── main.py           # LangGraph agent + FastAPI endpoints
 ├── mock_data/
