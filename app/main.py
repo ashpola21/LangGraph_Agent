@@ -20,7 +20,7 @@ from langchain_core.tools import tool
 from langchain_core.messages import BaseMessage, ToolMessage, AIMessage
 
 # -----------------------------------------------------------------------------
-# FastAPI setup and mock data loading (preserved from original)
+# FastAPI setup and mock data loading
 # -----------------------------------------------------------------------------
 
 app = FastAPI(title="LangGraph Triage Agent")
@@ -91,7 +91,7 @@ def ingest(state: TriageState) -> TriageState:
 
 # -----------------------------------------------------------------------------
 # Node: classify_issue
-# Purpose: Classify the issue type based on keyword rules (preserved logic)
+# Purpose: Classify the issue type based on keyword rules
 # -----------------------------------------------------------------------------
 
 def classify_issue(state: TriageState) -> TriageState:
@@ -149,7 +149,7 @@ def process_fetch_result(state: TriageState) -> TriageState:
 
 # -----------------------------------------------------------------------------
 # Node: draft_reply
-# Purpose: Generate reply using template (preserved logic)
+# Purpose: Generate reply using template
 # -----------------------------------------------------------------------------
 
 def draft_reply(state: TriageState) -> TriageState:
@@ -288,7 +288,7 @@ def triage_invoke(body: TriageInput):
 
 
 # -----------------------------------------------------------------------------
-# Preserve original utility endpoints for backward compatibility
+# Preserving original utility endpoints for backward compatibility
 # -----------------------------------------------------------------------------
 
 @app.get("/orders/get")
